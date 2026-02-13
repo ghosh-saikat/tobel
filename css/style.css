@@ -1,0 +1,563 @@
+@font-face {
+  font-family: "Belleza", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+}
+
+.container-padding {
+  padding: 150px 0;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+:root {
+  --primary-color: white;
+  --text-color: #d7cbb7;
+}
+/***************************Navbar section*******************/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(255, 255, 255, 20%);
+}
+.offcanvas {
+  flex-direction: row;
+}
+.navbar-container {
+  max-width: 1844px !important;
+}
+nav {
+  padding: 0 !important;
+}
+.nav-link {
+  color: var(--primary-color);
+  position: relative;
+  padding: 0 !important;
+}
+.nav-item {
+  margin-right: 50px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transition: 0.5s linear;
+  background: var(--primary-color);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.title {
+  margin-top: 110px;
+  font-size: 56px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-family: "Belleza", sans-serif;
+}
+
+/***************************Banner-section*********************/
+.banner-section {
+  min-height: 100vh;
+  background: url("../assests/BG.png") no-repeat center/cover;
+}
+.title-content > h1 {
+  font-size: 85px;
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+.primary-btn {
+  color: var(--text-color);
+  background: black;
+  padding: 18px 90px 18px 57px;
+  margin-top: 50px !important;
+}
+.banner-content img {
+  margin-left: 10px;
+}
+.banner-content .primary-btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+/*8**************************Shades-section**********************/
+
+.shades-section {
+  padding: 150px 0;
+}
+
+/* .col-3 > .img-1 {
+  max-width: 312px;
+  height: 489px;
+}
+.col-3 > .img-2 {
+  max-width: 312px;
+  height: 328px;
+} */
+
+.img-2 {
+  margin-left: 24px;
+}
+/************************Shopnow-section************************/
+/* .shopnow-section {
+  padding: 0 0 150px 0;
+} */
+.sale img {
+  max-width: 192px;
+}
+.discover img {
+  max-width: 172px;
+}
+.sale,
+.discover {
+  min-height: 554px;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  text-align: center;
+  /* padding: 200.5px 374.4px; */
+}
+.shopnow-btn a {
+  padding: 18px 67px 18px 57px;
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.sale img {
+  margin-top: 200.5px;
+}
+.discover img {
+  margin-top: 235.5px;
+}
+
+.discover a {
+  margin-top: 10px;
+}
+.sale a {
+  margin-top: 10px;
+}
+.shopnow-section .row > * {
+  padding: 0;
+}
+.shopnow-section .row {
+  margin: 0;
+}
+
+.sale {
+  background: url("../assests/Frame13.png") no-repeat center/cover;
+  /* padding: 200.5px 374px; */
+}
+.discover {
+  background: url("../assests/Frame14.png") no-repeat center/cover;
+  /* padding: 200.5px 374px; */
+}
+/*
+.shopnow-image-section .shopnow-image img {
+  max-width: 672px;
+  height: 554px;
+}
+.shopnow-image-section {
+  position: relative;
+}
+
+.shopnow-cntn1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.shopnow-cntn2 {
+  position: absolute;
+  top: 230px;
+  left: 240px;
+}
+.shopnow-btn a {
+  padding: 18px 67.23px 18px 57px;
+  color: #d7cbb7 !important;
+  /* border: 1px solid white; */
+/* background-color: white;
+  margin-top: 10px; */
+
+/***************************Banner-section2**********************/
+.video-container {
+  padding: 150px 0;
+  min-height: 100vh;
+  background: url("../assests/Frame\ 17.png") no-repeat center/cover;
+}
+
+.play-btn a {
+  color: white;
+  padding: 92.5px 78.5px;
+  border: 1px solid white;
+  border-radius: 100px;
+  letter-spacing: 5px;
+}
+
+/***************************About-section***********************/
+
+.about-section {
+  padding: 150px 0;
+}
+.about-cntn h2 {
+  font-size: 56px;
+}
+.about-image {
+  max-width: 536px;
+  /* margin-left: 129px; */
+}
+.new-image {
+  max-width: 116px;
+}
+.col-7 .about-para {
+  max-width: 508px;
+}
+.col-7 .about-hdr {
+  max-width: 655px;
+}
+.about-btn a {
+  margin-top: 40px;
+  padding: 18px 67.23px 18px 57px;
+  border: 1px solid #d7cbb7;
+  color: #d7cbb7;
+}
+/***************************Products-section*******************/
+.product-card {
+  max-width: 366px;
+  margin: 0 auto;
+}
+.products-section {
+  padding: 150px 0;
+}
+.products-section h2 {
+  font-size: 56px;
+  max-width: 582px;
+  margin-bottom: 20px;
+}
+.about-section2-hdr {
+  max-width: 499px;
+  font-size: 56px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+.about-section-container {
+  background: url("../assests/Frame\ 27.png");
+}
+
+/*****************************about-section2*****************************/
+.about-section2 {
+  padding: 95px 0 95px 0;
+}
+.about-section2-btn a {
+  padding: 18px 67.23px 18px 57px;
+  color: #d7cbb7 !important;
+  border: 1px solid white;
+  /* background-color: white; */
+  margin-top: 10px;
+}
+.about-section2-img {
+  max-width: 116px;
+}
+.about-section2-cntn .about-section2-img,
+.about-section2-cntn.about-section2-btn {
+  margin-left: auto;
+}
+
+.about-section2-hdr {
+  font-size: 56px;
+  font-family: "Belleza", sans-serif;
+  margin-left: auto;
+}
+.about-section2 {
+  background: url("../assests/Frame27.png") no-repeat center/cover;
+  min-height: 700px;
+}
+
+/********************************Stats-section***************************/
+
+.stats-section {
+  padding: 150px 0;
+}
+.stats .stats-hdr p {
+  max-width: 900px;
+  font-size: 56px;
+  margin-bottom: 58px;
+}
+.stats-cntn {
+  margin-top: 48px;
+  font-size: 13px;
+}
+.percent-bar90 {
+  height: 1px;
+  /* background: black; */
+  position: relative;
+}
+.percent-bar78 {
+  height: 1px;
+  /* background: black; */
+  position: relative;
+}
+
+.percent-bar78::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  background: black;
+  width: 78%;
+}
+.percent-bar78::before {
+  content: "";
+  background: black;
+  left: 78%;
+  height: 11px;
+  width: 1px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.percent-bar90::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  background: black;
+  width: 90%;
+}
+.percent-bar90::before {
+  content: "";
+  background: black;
+  left: 90%;
+  height: 11px;
+  width: 2px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/******************************footer-section****************************/
+.footer-section .col-4 {
+  max-width: 426px;
+}
+
+.ftr-social a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.ftr-cntn a {
+  font-size: 19px;
+  color: white;
+}
+.ftr-para {
+  font-size: 19px;
+}
+.ftr {
+  max-width: 254px;
+}
+.ftr-hdr h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.footer-section {
+  background: #000000;
+  color: white;
+  padding: 171px 0 150px 0;
+}
+.ftr-image {
+  max-width: 134px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.ftr-para {
+  margin-bottom: 34px;
+  max-width: 426px;
+  font-size: 19px;
+}
+.ftr-social p {
+  font-size: 16px;
+  margin-right: 21px;
+}
+.email {
+  margin-top: 36px;
+  opacity: 1;
+  background-color: black;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+.offer {
+  margin: 18px 0;
+}
+/* .e-border {
+  border-bottom: 1px solid white;
+} */
+.submit-info {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+.submit a {
+  padding: 18px 67px 18px 57px;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*********************************media queries starts here***************************/
+@media screen and (max-width: 992px) {
+  .offcanvas {
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 76.5px;
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-item {
+    margin: 0 0 20px 0 !important;
+  }
+
+  .close-btn {
+    background: none;
+    position: absolute;
+
+    left: 15px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0 15px;
+  }
+  .close-btn > span {
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    background: white;
+    left: 0;
+    top: 3px;
+    right: 0;
+    transform: rotate(45deg) translate(-3px);
+  }
+  .close-btn::after {
+    content: "";
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -3px;
+    transform: rotate(-45deg) translate(-5px);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /**********************************Banner-section***************************/
+  .title-content > h1 {
+    font-size: 44px;
+  }
+  .primary-btn {
+    padding: 18px 43px 18px 42px;
+  }
+  .shades-cntn > .primary-btn a {
+    margin: 0 auto;
+  }
+
+  .about-section .new-image img {
+    width: 536px;
+    height: 440px;
+  }
+  .about-section .about-hdr {
+    font-size: 32px;
+  }
+
+  .col-5 .about-image {
+    margin: 0 auto;
+  }
+  /***********************Footer-section*********************/
+  .footer-section .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section .col-4,
+  .col-2,
+  .col-3 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-content {
+    font-size: 32px;
+  }
+  .about-section .about-btn {
+    text-align: center;
+  }
+  .products-section h2 {
+    font-size: 30px;
+  }
+
+  .about-section2-hdr,
+  .about-section2-cntn img {
+    text-align: center;
+  }
+  .about-section2-btn {
+    margin: 0 auto;
+  }
+  .about-section2-img {
+    margin-right: auto;
+  }
+  .footer-section .row.col-4,
+  .col-3,
+  .col-2 {
+    margin-top: 30px;
+  }
+  .footer-section .ftr-cntn p {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-section .about-hdr {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .footer-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section .row .col-4,
+  .col-3,
+  .col-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
